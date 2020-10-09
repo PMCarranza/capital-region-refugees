@@ -16,55 +16,151 @@
 </head>
 
 <body>
-    <header>
-        <div id="top-text">
-            <p id="title-text">Supporting Refugees <br>in the Capital Region</p>
+    <!-- <header>
+        <p id="title-text">Supporting Refugees in the Capital Region</p>
+    </header> -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+        <div class="navbar-toggler-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span>MENU</span>
+            </button>
         </div>
+
+        <div class="collapse navbar-collapse flex-column " id="navbar">
+
+            <ul class="navbar-nav  w-100 justify-content-center px-3">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ABOUT REFUGEES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">A Child's Perspective</a>
+                        <a class="dropdown-item" href="#">Refugees from Bhutan</a>
+                        <a class="dropdown-item" href="#">Refugees from Burma</a>
+                        <a class="dropdown-item" href="#">Refugees from Iraq</a>
+                        <a class="dropdown-item" href="#">Refugees from XXXX</a>
+                        <a class="dropdown-item" href="#">Refugees from XXXXX</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SUPPORTING REFUGEES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Refugee Roundtable</a>
+                        <a class="dropdown-item" href="#">Newcomer Resource List</a>
+                        <a class="dropdown-item" href="#">Additional Resources</a>
+                        <a class="dropdown-item" href="#">Self-Sufficiency</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VOLUNTEERING
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">How to Volunteer</a>
+                        <a class="dropdown-item" href="#">Resources for Volunteers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        LEARNING ENGLISH
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Classes</a>
+                        <a class="dropdown-item" href="#">ESOL Resources</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        IMMIGRATION/CITIZENSHIP
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">Immigration Clinic</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav justify-content-center w-100 bg-secondary px-3">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        HEALTH
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Health Care Providers</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EDUCATION
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">City School District Albany</a>
+                        <a class="dropdown-item" href="#">Welcome to Our Schools</a>
+                        <a class="dropdown-item" href="#">Making a Connection</a>
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">Adult Education</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SOCIAL SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EMPLOYMENT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">Tips</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <header>
+        <p id="title-text">Supporting Refugees in the Capital Region</p>
     </header>
 
-    <navigation id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Volunteering</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Basic Needs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Immigration & Citizenship</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Health</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Learning English</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-    </navigation>
-
-    <main>
+    <main class="content">
         <article>
             <h1>WELCOME TO THE CAPTIAL REGION REFUGEE RESOURCE PAGE</h1>
             <h2>A WEBSITE TO HELP THE CAPITAL REGION HELP REFUGEES</h2>
         </article>
 
 
-        <div id="center-img">
+        <!-- <div id="center-img">
             <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x100"></a>
-        </div>
+        </div> -->
 
         <section>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati autem officiis cumque ullam, quae
@@ -73,14 +169,21 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem ex temporibus eum facilis,
                 consequuntur assumenda iure asperiores officiis, ab distinctio unde non doloribus molestiae vel nisi,
                 dolorem maxime nihil?
-            </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat sequi quisquam laboriosam, vel laudantium impedit quam ipsum saepe dolores distinctio accusamus quia repellat exercitationem sapiente! Delectus cupiditate at quaerat.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati autem officiis cumque ullam, quae
+                minima, quo alias quia maxime libero aut. Omnis sit officia maiores praesentium consectetur consequuntur
+                dolorem minus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem ex temporibus eum facilis,
+                consequuntur assumenda iure asperiores officiis, ab distinctio unde non doloribus molestiae vel nisi,
+                dolorem maxime nihil?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat sequi quisquam laboriosam, vel laudantium impedit quam ipsum saepe dolores distinctio accusamus quia repellat exercitationem sapiente! Delectus cupiditate at quaerat.</p>
         </section>
 
     </main>
 
     <footer>
         <p id="foot">Interested in joining the team or have more questions, <a href="anneobriencarelli@gmail.com">Email
-            us</a></p>
+                us</a></p>
     </footer>
 
     <!-- Optional JavaScript -->
