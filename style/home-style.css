@@ -1,42 +1,78 @@
-body{
+html, body{
+    height: 100%;
+    margin: auto;
+}
+
+/* body{
     background-image: url(../images/RRTFlyer.jpg);
     background-size: 100%;
-    background-color: rgb(171, 182, 190);
+    background-color: rgb(181, 189, 196);
     background-blend-mode: screen;
     z-index: -1;
     background-repeat: no-repeat;
     position: absolute;
-}
+} */
 
-#title-text{
-    /* padding-top: 2%; */
-    font-size: 4vw;
-    text-align: center;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-span{
-    font-weight: bold;
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 .navbar {
     padding:0rem;
-    margin-bottom:2rem;
+    /* margin-bottom:2rem; */
 }
 
 .dropdown .dropdown-menu {
     border-radius:0;
 }
 
-
 .nav-link{
     font-weight: bold;
 }
 
+.top-img{
+    max-width: 100%;
+    align-content: center;
+    margin-bottom: 2%;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+#title-text{
+    font-size: 4vw;
+    text-align: center;
+    color: slategray;
+    font-weight: bold;
+    padding: 1%;
+    background-color: lightgray;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta;
+    /* text-shadow: 1vw 1vw 1vw rgb(209, 21, 21); */
+}
+
+h2{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: slategray
+}
+
+h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: slategray;
+}
+
 .content{
+    max-width: 90%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%
 }
 
 article{
@@ -44,16 +80,11 @@ article{
     margin-bottom: 2%;
 }
 
-h1{
-    font-size: 2.5vw;
-    font-weight: bold;
-    color: slategray
-}
-
-h2{
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: slategray;
+.body-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10%;
 }
 
 /* #center-img{
@@ -62,30 +93,32 @@ h2{
     margin-bottom: 2%;
 } */
 
-p{
-    margin-left: 10%;
-    font-size: 18px;
-    max-width: 80%;
-    text-align: center;
+
+.footer, .push{
+    height: 50px;
 }
 
-footer{
-    flex-shrink: 0;
+span{
+    font-weight: bold;
+}
+
+.footer{
     background-color: teal;
 }
 
 #foot{
-    padding: 1%;
-    color: whitesmoke;
-    font-size: 1.5vw;
     font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1%;
 }
 
 #foot > a{
     color: whitesmoke;
 }
 
-#foot :hover{
+#foot > a:hover{
     text-decoration: none;
     color: orangered
 }
@@ -102,22 +135,39 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 990px) {
 
-    header{
-        height: 150px;
-    }
-    p{
-        font: 16px;
+    .body-text{
+        font: 14px;
     }
 
 }
 
 @media only screen and (max-width: 660px) {
 
-    header{
-        height: 100px;
+    .body-text{
+        font: 12px;
+        color: gray;
     }
-    p{
-        font: 14px;
+    .wrapper{
+        margin-bottom: -25px;
+    }
+
+    .footer, .push{
+        height: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .body-text{
+        font: 12px;
+        color: gray;
+    }
+    .wrapper{
+        margin-bottom: -25px;
+    }
+    .footer, .push{
+        height: 20px;
     }
 
 }
