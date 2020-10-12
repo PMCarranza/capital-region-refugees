@@ -18,6 +18,13 @@ html, body{
     margin-bottom: -50px;
 }
 
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .navbar {
     padding:0rem;
     /* margin-bottom:2rem; */
@@ -55,14 +62,14 @@ html, body{
 }
 
 h2{
-    font-size: 2.5vw;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: slategray
 }
 
 h3{
-    font-size: 1.5vw;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     color: slategray;
@@ -126,14 +133,20 @@ span{
 /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
         border-radius:0;
     }
-    }
+
+}
 
 @media only screen and (max-width: 990px) {
+
+    span{
+        color: whitesmoke;
+    }
 
     .body-text{
         font: 14px;
@@ -143,10 +156,21 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 660px) {
 
+    h2{
+        font-size: 22px;
+        padding: 1%;
+    }
+    
+    h3{
+        font-size: 18px;
+        padding: 1%;
+    }
+    
     .body-text{
         font: 12px;
         color: gray;
     }
+
     .wrapper{
         margin-bottom: -25px;
     }
@@ -159,8 +183,18 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 500px) {
 
+    h2{
+        font-size: 18px;
+        padding: 1%;
+    }
+    
+    h3{
+        font-size: 14px;
+        padding: 1%;
+    }
+    
     .body-text{
-        font: 12px;
+        font: 10px;
         color: gray;
     }
     .wrapper{
