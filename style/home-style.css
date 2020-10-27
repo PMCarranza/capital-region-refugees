@@ -3,16 +3,6 @@ html, body{
     margin: auto;
 }
 
-/* body{
-    background-image: url(../images/RRTFlyer.jpg);
-    background-size: 100%;
-    background-color: rgb(181, 189, 196);
-    background-blend-mode: screen;
-    z-index: -1;
-    background-repeat: no-repeat;
-    position: absolute;
-} */
-
 .wrapper{
     min-height: 100%;
     margin-bottom: -50px;
@@ -27,7 +17,6 @@ html, body{
 
 .navbar {
     padding:0rem;
-    /* margin-bottom:2rem; */
 }
 
 .dropdown .dropdown-menu {
@@ -48,84 +37,53 @@ html, body{
     height: auto;
 }
 
-
-
-
-
-/* .rw-wrapper{
-    max-width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1%;
-} */
-
-.rw-sentence span{
-	color: slategray;
-	white-space: nowrap;
-	font-size: 4vw;
-	font-weight: bold;
-}
-
-/* .rw-words{
-	display: inline;
-    text-align: center;
-} */
-
 #rotating{
-    /* background: rgb(220,220,220);
-    background: radial-gradient(circle, rgba(220,220,220,1) 0%, rgba(235,253,29,0.752450073964497) 50%, rgba(69,80,252,0.6607340976331362) 100%); */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* max-width: 75%; */
-    font-size: 4vw;
-    text-transform: uppercase;
-    padding-bottom: 1%;
+    height: 75px;
 }
 
-.rw-words span{
+#rotating > div > span{
+    font-size: 4vw;
     position: absolute;
 	opacity: 0;
 	overflow: hidden;
-    color: #6b969d;
 }
 
-#rotating > div{
-    margin-bottom: 5%;
+div.rw-words.rw-words-1{
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 37.5%;
 }
 
 .rw-words-1 span{
     animation: rotateWordsFirst 35s linear infinite -4s;
 }
-/* .rw-words-2 span{
-	animation: rotateWordsSecond 18s linear infinite 0s;
-} */
+
 .rw-words span:nth-child(2) { 
-	animation-delay: 3s; 
+	animation-delay: 4s; 
 	color: #8B00FF;
 }
 .rw-words span:nth-child(3) { 
-	animation-delay: 8s; 
+	animation-delay: 10s; 
 	color: #2E2B5F;	
 }
 .rw-words span:nth-child(4) { 
-	animation-delay: 13s; 
-	color: #0000FF;
+	animation-delay: 15s; 
+	color: #003882;
 }
 .rw-words span:nth-child(5) { 
-	animation-delay: 18s; 
+	animation-delay: 20s; 
 	color:  #00FF00;
 }
 .rw-words span:nth-child(6) {  
-	animation-delay: 23s; 
-	color: #FFFF00;
+	animation-delay: 25s; 
+	color: #00d9ff;
 }
 .rw-words span:nth-child(7) {  
-	animation-delay: 28s; 
+	animation-delay: 30s; 
 	color: #FF7F00;
 }
 .rw-words span:nth-child(8) {  
-	animation-delay: 33s; 
+	animation-delay: 35s; 
 	color: #FF0000;
 }
 
@@ -136,13 +94,6 @@ html, body{
 	25% { opacity: 0; height: 60px; }
     100% { opacity: 0; }
 }
-
-
-
-
-
-
-
 
 #title-text{
     font-size: 4vw;
@@ -189,13 +140,6 @@ article{
     margin-left: 10%;
 }
 
-/* #center-img{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-} */
-
-
 .footer, .push{
     height: 50px;
 }
@@ -239,6 +183,10 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 990px) {
 
+    #rotating{
+        height: 60px;
+    }
+
     span{
         color: whitesmoke;
     }
@@ -250,6 +198,11 @@ The navbar toggle appears at this breakpoint */
 }
 
 @media only screen and (max-width: 660px) {
+
+    #rotating{
+        margin-top: 1%;
+        height: 40px;
+    }
 
     h3{
         font-size: 22px;
@@ -277,6 +230,11 @@ The navbar toggle appears at this breakpoint */
 }
 
 @media only screen and (max-width: 500px) {
+
+    #rotating{
+        margin-top: .5%;
+        height: 25px;
+    }
 
     h3{
         font-size: 18px;
