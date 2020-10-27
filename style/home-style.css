@@ -3,24 +3,20 @@ html, body{
     margin: auto;
 }
 
-/* body{
-    background-image: url(../images/RRTFlyer.jpg);
-    background-size: 100%;
-    background-color: rgb(181, 189, 196);
-    background-blend-mode: screen;
-    z-index: -1;
-    background-repeat: no-repeat;
-    position: absolute;
-} */
-
 .wrapper{
     min-height: 100%;
     margin-bottom: -50px;
 }
 
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .navbar {
     padding:0rem;
-    /* margin-bottom:2rem; */
 }
 
 .dropdown .dropdown-menu {
@@ -34,12 +30,69 @@ html, body{
 .top-img{
     max-width: 100%;
     align-content: center;
-    margin-bottom: 2%;
 }
 
 .img{
     width: 100%;
     height: auto;
+}
+
+#rotating{
+    height: 75px;
+}
+
+#rotating > div > span{
+    font-size: 4vw;
+    position: absolute;
+	opacity: 0;
+	overflow: hidden;
+}
+
+div.rw-words.rw-words-1{
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 37.5%;
+}
+
+.rw-words-1 span{
+    animation: rotateWordsFirst 35s linear infinite -4s;
+}
+
+.rw-words span:nth-child(2) { 
+	animation-delay: 4s; 
+	color: #8B00FF;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 10s; 
+	color: #2E2B5F;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 15s; 
+	color: #003882;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 20s; 
+	color:  #00FF00;
+}
+.rw-words span:nth-child(6) {  
+	animation-delay: 25s; 
+	color: #00d9ff;
+}
+.rw-words span:nth-child(7) {  
+	animation-delay: 30s; 
+	color: #FF7F00;
+}
+.rw-words span:nth-child(8) {  
+	animation-delay: 35s; 
+	color: #FF0000;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
 }
 
 #title-text{
@@ -54,15 +107,15 @@ html, body{
     /* text-shadow: 1vw 1vw 1vw rgb(209, 21, 21); */
 }
 
-h2{
-    font-size: 2.5vw;
+h3{
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: slategray
 }
 
-h3{
-    font-size: 1.5vw;
+h4{
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     color: slategray;
@@ -86,13 +139,6 @@ article{
     text-align: center;
     margin-left: 10%;
 }
-
-/* #center-img{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-} */
-
 
 .footer, .push{
     height: 50px;
@@ -126,14 +172,24 @@ span{
 /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
         border-radius:0;
     }
-    }
+
+}
 
 @media only screen and (max-width: 990px) {
+
+    #rotating{
+        height: 60px;
+    }
+
+    span{
+        color: whitesmoke;
+    }
 
     .body-text{
         font: 14px;
@@ -143,10 +199,26 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 660px) {
 
+    #rotating{
+        margin-top: 1%;
+        height: 40px;
+    }
+
+    h3{
+        font-size: 22px;
+        padding: 1%;
+    }
+    
+    h4{
+        font-size: 18px;
+        padding: 1%;
+    }
+    
     .body-text{
         font: 12px;
         color: gray;
     }
+
     .wrapper{
         margin-bottom: -25px;
     }
@@ -159,8 +231,23 @@ The navbar toggle appears at this breakpoint */
 
 @media only screen and (max-width: 500px) {
 
+    #rotating{
+        margin-top: .5%;
+        height: 25px;
+    }
+
+    h3{
+        font-size: 18px;
+        padding: 1%;
+    }
+    
+    h4{
+        font-size: 14px;
+        padding: 1%;
+    }
+    
     .body-text{
-        font: 12px;
+        font: 10px;
         color: gray;
     }
     .wrapper{
