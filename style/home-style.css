@@ -37,7 +37,7 @@ html, body{
     height: auto;
 }
 
-#rotating{
+/* #rotating{
     height: 75px;
 }
 
@@ -93,10 +93,10 @@ div.rw-words.rw-words-1{
     19% { opacity: 1; height: 60px; }
 	25% { opacity: 0; height: 60px; }
     100% { opacity: 0; }
-}
+} */
 
 #title-text{
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     color: slategray;
     font-weight: bold;
@@ -104,7 +104,6 @@ div.rw-words.rw-words-1{
     background-color: lightgray;
     border-top: 1px solid magenta;
     border-bottom: 1px solid magenta;
-    /* text-shadow: 1vw 1vw 1vw rgb(209, 21, 21); */
 }
 
 h3{
@@ -114,30 +113,53 @@ h3{
     color: slategray
 }
 
-h4{
+/* h4{
     font-size: 26px;
     font-weight: bold;
     text-align: center;
     color: slategray;
-}
+} */
 
 .content{
-    max-width: 90%;
+    max-width: 95%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%
+    margin: 0 auto
 }
 
-article{
-    text-align: center;
-    margin-bottom: 2%;
+section{
+    max-width: 100%;
+    margin: 2.5%;
+    display: flex;
 }
 
-.body-text{
+.refugee-img{
+    width: 20%;
+    float: left;
+    margin: 0 2.5%;
+}
+
+#refugee-text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    text-align: center;
-    margin-left: 10%;
+    margin-left: 2.5%;
+}
+
+.immigrant{
+    margin: 2.5%;
+}
+
+#immigrant-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+.immigrant-img{
+    width: 20%;
+    float: right;
+    margin: 0 2.5%;
 }
 
 .footer, .push{
@@ -181,31 +203,37 @@ The navbar toggle appears at this breakpoint */
 
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 992px) {
 
-    #rotating{
+    /* #rotating{
         height: 60px;
-    }
+    } */
 
     span{
         color: whitesmoke;
     }
 
-    .body-text{
-        font: 14px;
+    #refugee-text{
+        font-size: 16px;
+        color: gray;
+    }
+
+    #immigrant-text{
+        font-size: 16px;
+        color: gray;
     }
 
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 760px) {
 
-    #rotating{
+    /* #rotating{
         margin-top: 1%;
         height: 40px;
-    }
+    } */
 
     h3{
-        font-size: 22px;
+        font-size: 20px;
         padding: 1%;
     }
     
@@ -213,11 +241,16 @@ The navbar toggle appears at this breakpoint */
         font-size: 18px;
         padding: 1%;
     }
-    
-    .body-text{
-        font: 12px;
+
+    #refugee-text{
+        font-size: 14px;
         color: gray;
     }
+
+    #immigrant-text{
+        font-size: 14px;
+        color: gray;
+    }    
 
     .wrapper{
         margin-bottom: -25px;
@@ -229,15 +262,15 @@ The navbar toggle appears at this breakpoint */
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 
-    #rotating{
+    /* #rotating{
         margin-top: .5%;
         height: 25px;
-    }
+    } */
 
     h3{
-        font-size: 18px;
+        font-size: 16px;
         padding: 1%;
     }
     
@@ -246,10 +279,16 @@ The navbar toggle appears at this breakpoint */
         padding: 1%;
     }
     
-    .body-text{
-        font: 10px;
+    #refugee-text{
+        font-size: 10px;
         color: gray;
     }
+
+    #immigrant-text{
+        font-size: 10px;
+        color: gray;
+    }
+
     .wrapper{
         margin-bottom: -25px;
     }
