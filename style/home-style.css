@@ -113,13 +113,6 @@ h3{
     color: slategray
 }
 
-/* h4{
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    color: slategray;
-} */
-
 .content{
     max-width: 95%;
     display: flex;
@@ -127,50 +120,21 @@ h3{
     margin: 0 auto
 }
 
-section{
+.middle-img{
     max-width: 100%;
-    margin: 2.5%;
-    display: flex;
+    align-content: center;
 }
 
-.refugee-img{
-    width: 20%;
-    float: left;
-    margin: 0 2.5%;
-}
-
-#refugee-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-left: 2.5%;
-}
-
-.immigrant{
-    margin: 2.5%;
-}
-
-#immigrant-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: right;
-    margin-right: 2.5%;
-}
-
-.immigrant-img{
-    width: 20%;
-    float: right;
-    margin: 0 2.5%;
-}
-
+/* 
 .footer, .push{
     height: 50px;
-}
+} */
 
 span{
     font-weight: bold;
 }
 
-.footer{
+/* .footer{
     background-color: teal;
 }
 
@@ -189,11 +153,11 @@ span{
 #foot > a:hover{
     text-decoration: none;
     color: orangered
-}
+} */
 
 /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
+@media (min-width: 800px) {  
 
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -233,7 +197,7 @@ The navbar toggle appears at this breakpoint */
     } */
 
     h3{
-        font-size: 20px;
+        font-size: 14px;
         padding: 1%;
     }
     
@@ -242,23 +206,13 @@ The navbar toggle appears at this breakpoint */
         padding: 1%;
     }
 
-    #refugee-text{
-        font-size: 14px;
-        color: gray;
-    }
-
-    #immigrant-text{
-        font-size: 14px;
-        color: gray;
-    }    
-
     .wrapper{
         margin-bottom: -25px;
     }
 
-    .footer, .push{
+    /* .footer, .push{
         height: 20px;
-    }
+    } */
 
 }
 
@@ -270,7 +224,7 @@ The navbar toggle appears at this breakpoint */
     } */
 
     h3{
-        font-size: 16px;
+        font-size: 12px;
         padding: 1%;
     }
     
@@ -279,21 +233,11 @@ The navbar toggle appears at this breakpoint */
         padding: 1%;
     }
     
-    #refugee-text{
-        font-size: 10px;
-        color: gray;
-    }
-
-    #immigrant-text{
-        font-size: 10px;
-        color: gray;
-    }
-
     .wrapper{
         margin-bottom: -25px;
     }
-    .footer, .push{
+    /* .footer, .push{
         height: 20px;
-    }
+    } */
 
 }
