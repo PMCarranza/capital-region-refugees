@@ -1,0 +1,170 @@
+html, body{
+    height: 100%;
+    margin: auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    padding:0rem;
+}
+
+.dropdown .dropdown-menu {
+    border-radius:0;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.content{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+.refugee{
+    margin-top: 10%;
+}
+
+section{
+    max-width: 100%;
+    margin: 2.5%;
+    display: flex;
+}
+
+.refugee-img{
+    width: 20%;
+    float: left;
+    margin: 0 2.5%;
+}
+
+#refugee-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 2.5%;
+}
+
+.immigrant{
+    margin: 2.5%;
+}
+
+#immigrant-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+.immigrant-img{
+    width: 20%;
+    float: right;
+    margin: 0 2.5%;
+}
+
+.footer, .push{
+    height: 50px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.footer{
+    background-color: teal;
+}
+
+#foot{
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1%;
+}
+
+#foot > a{
+    color: whitesmoke;
+}
+
+#foot > a:hover{
+    text-decoration: none;
+    color: orangered
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 790px) {  
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        border-radius:0;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    span{
+        color: whitesmoke;
+    }
+
+    #refugee-text{
+        font-size: 16px;
+    }
+
+    #immigrant-text{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #refugee-text{
+        font-size: 14px;
+    }
+
+    #immigrant-text{
+        font-size: 14px;
+    }    
+
+    .wrapper{
+        margin-bottom: -25px;
+    }
+
+    .footer, .push{
+        height: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    #refugee-text{
+        font-size: 10px;
+    }
+
+    #immigrant-text{
+        font-size: 10px;
+    }
+
+    .wrapper{
+        margin-bottom: -25px;
+    }
+    .footer, .push{
+        height: 25px;
+    }
+
+}
