@@ -1,0 +1,118 @@
+html, body{
+    height: 100%;
+    margin: auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    padding:0rem;
+}
+
+.dropdown .dropdown-menu {
+    border-radius:0;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.content{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+#title-text{
+    font-size: 3vw;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding: 1%;
+    /* background-color: lightgray;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid magenta; */
+}
+
+.footer, .push{
+    height: 50px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.footer{
+    background-color: teal;
+}
+
+#foot{
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1%;
+}
+
+#foot > a{
+    color: whitesmoke;
+}
+
+#foot > a:hover{
+    text-decoration: none;
+    color: orangered
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 790px) {  
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        border-radius:0;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    span{
+        color: whitesmoke;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper{
+        margin-bottom: -25px;
+    }
+
+    .footer, .push{
+        height: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    .wrapper{
+        margin-bottom: -25px;
+    }
+    .footer, .push{
+        height: 25px;
+    }
+
+}
