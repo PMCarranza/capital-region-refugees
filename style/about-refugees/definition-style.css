@@ -73,6 +73,16 @@ section{
     margin: 0 2.5%;
 }
 
+#refugee-text > a{
+    text-decoration: none;
+    color: rgb(128, 115, 115);
+}
+
+#refugee-text > a:hover{
+    text-decoration: none;
+    color: #24678d;
+}
+
 .footer, .push{
     height: 50px;
 }
