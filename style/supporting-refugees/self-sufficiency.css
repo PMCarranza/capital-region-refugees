@@ -28,21 +28,26 @@ html, body{
 }
 
 .content{
-    max-width: 95%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto
 }
 
 #title-text{
+    margin-top: 1%;
     font-size: 3vw;
     text-align: center;
-    color: red;
+    color: slategray;
     font-weight: bold;
     padding: 1%;
-    /* background-color: lightgray;
+    background-color: lightgray;
     border-top: 1px solid magenta;
-    border-bottom: 1px solid magenta; */
+    border-bottom: 1px solid magenta;
+}
+
+p{
+    margin: 2.5%;
 }
 
 .footer, .push{
