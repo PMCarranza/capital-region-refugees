@@ -35,29 +35,14 @@ html, body{
 }
 
 #title-text{
-    margin-top: 1%;
     font-size: 3vw;
     text-align: center;
-    color: slategray;
+    color: red;
     font-weight: bold;
     padding: 1%;
-    background-color: lightgray;
+    /* background-color: lightgray;
     border-top: 1px solid magenta;
-    border-bottom: 1px solid magenta;
-}
-
-p{
-    margin: 2.5%;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(128, 115, 115);
-}
-
-a:hover{
-    text-decoration: none;
-    color: #24678d;
+    border-bottom: 1px solid magenta; */
 }
 
 .footer, .push{
