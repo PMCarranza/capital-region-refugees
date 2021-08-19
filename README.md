@@ -13,6 +13,7 @@ Questions about the site? ideas to improve it? tips, pointers? feel free to cont
 ## **Roadmap**
 This is an ongoing project, colors, layout, photos used are subject to change based on input recieved from Anne Carelli, which in turn recieves input from someone else.
 I will be working on this site one page at a time, once the home page has been approved it will go live and then we will move on the the next one with the highest priority on the list.
+At the moment the project is for the new volunteer group to take charge and government support. 
 
 ## **Tecnologies Used**
 
