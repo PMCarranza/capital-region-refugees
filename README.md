@@ -4,7 +4,7 @@ This website was created to help the Capital Region Refugees non-profit.
 This website is sponsored by the Capital Region Refugee Roundtabe, a network of volounteers that provide support and assistance to the refugees that have resettled in the capital region.
 
 ## **Description**
-this site is meant to be used by those looking for resources as refugees and/or those looking for an opportunity to volunteer to make refugees feel welcome and help them meet their needs.
+This site is meant to be used by those looking for resources as refugees and/or those looking for an opportunity to volunteer to make refugees feel welcome and help them meet their needs.
 Navigation of the site is based on the multiple dropdown menus at the top, each one re-dericting the user to a different page in the site.
 
 ## **Support**
