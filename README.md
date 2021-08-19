@@ -1,5 +1,5 @@
 # **Capital-Region-Refugees**
-This website was created to help the Capital Region Refugees non-profit.
+This website was created to help the Capital Region Refugees non-profit assist those who need help when first arrive to the US.
 
 This website is sponsored by the Capital Region Refugee Roundtabe, a network of volounteers that provide support and assistance to the refugees that have resettled in the capital region.
 
